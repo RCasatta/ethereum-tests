@@ -18,6 +18,8 @@ def getRawTransaction(hash):
 # new_block_filter = web3.eth.filter('latest')
 # new_block_filter.watch(new_block_filter)
 
+print web3.eth.getBlock(233488, full_transactions=True)
+
 
 def getAppendAndPrepend(inside, total):
     idx = total.index(inside, 0, len(total))
